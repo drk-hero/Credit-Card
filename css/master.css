@@ -1,0 +1,249 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", Arial, monospace, "Helvetica Neue";
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgba(222, 222, 222, 0.2156862745);
+}
+
+.main-peymet {
+  margin: 100px auto;
+}
+.main-peymet .sec-parent-peymet .peyent-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.main-peymet .sec-parent-peymet .peyent-title h1 {
+  font-weight: 600;
+}
+.main-peymet .sec-parent-peymet .cart-peyment {
+  width: 100%;
+  max-width: 400px;
+  max-height: 260px;
+  height: 54vw;
+  padding: 20px;
+  position: relative;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart,
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart {
+  transform-origin: center;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  min-height: 250px;
+  max-height: 250px;
+  left: 0;
+  top: 0;
+  background-color: #616161;
+  transition: all 0.9s;
+  border-radius: 20px;
+  box-shadow: 1px 5px 6px 0px black;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart {
+  z-index: 1;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .sim-cart {
+  position: absolute;
+  left: 24px;
+  top: 30px;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .svg-background-silver {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 20px 20px 0 0;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .custom-shape-divider-top-1659450214 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  z-index: -1;
+  border-radius: 0 0 20px 20px;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .custom-shape-divider-top-1659450214 svg {
+  position: relative;
+  display: block;
+  width: calc(214% + 1.3px);
+  height: 120px;
+  overflow: hidden;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .custom-shape-divider-top-1659450214 .shape-fill {
+  fill: #bdbdbd;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .main-cart-front .card-number-body .row {
+  position: relative;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .main-cart-front .card-number-body .row #dashed {
+  display: block;
+  opacity: 0;
+  width: 3px;
+  height: 50%;
+  position: absolute;
+  left: 53px;
+  top: 3px;
+  padding: 0;
+  transform: rotate(13deg);
+  background-color: #e5e5e5;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .main-cart-front .card-number-body span {
+  display: block;
+  font-size: 14px;
+  color: #bdbdbd;
+  margin-bottom: 5px;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .main-cart-front .card-number-body #card-numbered {
+  max-height: 35px;
+  min-height: 35px;
+  font-size: 22px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .main-cart-front .card-number-body #card-name,
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .main-cart-front .card-number-body #card-expiration-mm,
+.main-peymet .sec-parent-peymet .cart-peyment .front-cart .main-cart-front .card-number-body #card-expiration-yy {
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 19px;
+  color: white;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart {
+  z-index: 0;
+  transform: rotateY(-180deg);
+}
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart .line-black {
+  min-height: 40px;
+  max-height: 40px;
+  background-color: black;
+  position: relative;
+  top: 30px;
+  left: 0;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart .line-ccv2-name .line-ccv2-row {
+  justify-content: center;
+  margin-top: 50px;
+  min-height: 80px;
+  max-height: 80px;
+  padding: 0 10px;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart .line-ccv2-name .line-ccv2-row .back-name {
+  min-height: 55px;
+  max-height: 55px;
+  border-radius: 3px 0 0 3px;
+  position: relative;
+  background-color: #F2F2F2;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart .line-ccv2-name .line-ccv2-row .back-name #bac-name-p {
+  position: relative;
+  z-index: 1;
+  font-size: 18px;
+  margin-bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Rock Salt", cursive;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart .line-ccv2-name .line-ccv2-row .back-name::after, .main-peymet .sec-parent-peymet .cart-peyment .back-cart .line-ccv2-name .line-ccv2-row .back-name::before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #D8D2DB;
+  position: absolute;
+  left: 0;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart .line-ccv2-name .line-ccv2-row .back-name::after {
+  content: "";
+  top: 38px;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart .line-ccv2-name .line-ccv2-row .back-name::before {
+  content: "";
+  top: 18px;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart .line-ccv2-name .line-ccv2-row #backccv2 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 3px 3px 0;
+  padding: 5px;
+  font-size: 17px;
+  background-color: #C4C4C4;
+  color: #47525d;
+  font-weight: 600;
+}
+.main-peymet .sec-parent-peymet .cart-peyment .back-cart .line-ccv2-name .line-ccv2-row .container-fluid {
+  font-size: 14px;
+  color: #cecece;
+  text-align: end;
+  padding-right: 30px;
+  margin-top: 5px;
+}
+.main-peymet .sec-parent-peymet .box-peyment .row > .col-10 {
+  margin-bottom: 25px;
+}
+.main-peymet .sec-parent-peymet .box-peyment .row > .col-10 label {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: rgb(189, 189, 189);
+  cursor: pointer;
+}
+.main-peymet .sec-parent-peymet .box-peyment .row > .col-10 input {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  width: 50%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+}
+.main-peymet .sec-parent-peymet .box-peyment .row > .col-10 input:focus-visible {
+  outline: 2px solid #dcdcdc;
+}
+.main-peymet .sec-parent-peymet .box-peyment .row > .col-10 #Expiration_yy,
+.main-peymet .sec-parent-peymet .box-peyment .row > .col-10 #Expiration_mm {
+  width: 100%;
+}
+.main-peymet .sec-parent-peymet .box-peyment .btn-paymet {
+  background-color: #bdbdbd;
+  border: transparent !important;
+  box-shadow: 1px 2px 8px 4px rgba(97, 97, 97, 0.2588235294);
+  transition: all 0.5s;
+  color: white;
+  font-weight: 600;
+  font-size: 20px !important;
+}
+.main-peymet .sec-parent-peymet .box-peyment .btn-paymet:hover {
+  font-size: 22px !important;
+  color: #464646;
+  background-color: rgba(189, 189, 189, 0.537254902);
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+}/*# sourceMappingURL=master.css.map */
